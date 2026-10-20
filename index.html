@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protocolo Alter Ego · Lennon</title>
+<meta name="description" content="Protocolo Alter Ego: vença a autossabotagem, pare de travar na hora de cobrar o que merece, recupere o respeito nas suas relações e assuma o comando da sua rotina sem hesitar.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/marca/fav-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/marca/fav-192.png">
+<link rel="apple-touch-icon" href="img/marca/fav-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter:wght@200;300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+<style>
+:root{
+  --g:#3DCC70;
+  --g-hi:#4ADE80;
+  --g-sec:#17924A;
+  --g-ink:#127A3D;
+  --ink:#04140A;
+  --fd:"Anton",Impact,sans-serif;
+  --fb:"Inter",system-ui,sans-serif;
+  --fs:"Instrument Serif",Georgia,serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;font-synthesis:none}
+body{margin:0;background:#000;color:#fff;font-family:var(--fb);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+h1,h2,h3,p{margin:0}
+a{color:inherit}
+section{position:relative}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.center{text-align:center}
+.serif{font-family:var(--fs);font-style:italic;font-weight:400;letter-spacing:0;font-size:1.1em}
+.h2{font:400 clamp(32px,4.72vw,68px)/1.1 var(--fb);letter-spacing:-.02em;text-align:center;text-wrap:balance}
+.disp{font:400 clamp(38px,5.6vw,84px)/1.02 var(--fd);text-transform:uppercase;text-align:center;text-wrap:balance}
+.desc{font:300 clamp(17px,1.67vw,24px)/1.5 var(--fb);text-align:center;text-wrap:balance}
+.eyebrow{font:500 14px/1 var(--fb);letter-spacing:2px;text-transform:uppercase}
+.btn{--arrow:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 5l7 7-7 7'/%3E%3C/svg%3E");
+  display:inline-flex;align-items:center;justify-content:space-between;gap:16px;width:min(500px,100%);min-height:66px;padding:7px 7px 7px 30px;border-radius:50px;border:0;
+  background:var(--g);color:var(--ink);font:500 clamp(15px,1.67vw,24px)/1.15 var(--fb);text-transform:uppercase;text-decoration:none;text-align:left;cursor:pointer;
+  transition:transform .3s,background .3s,box-shadow .3s}
+.btn:hover{transform:scale(1.03);background:var(--g-hi);box-shadow:0 14px 40px -12px rgba(61,204,112,.7)}
+.btn .bdot{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--ink);transition:transform .3s}
+.btn .bdot::before{content:"";width:40%;height:40%;background:var(--g);-webkit-mask:var(--arrow) center/contain no-repeat;mask:var(--arrow) center/contain no-repeat}
+.btn:hover .bdot{transform:translateX(3px)}
+.btn-oferta{width:min(460px,100%);font-size:clamp(15px,1.45vw,20px);white-space:nowrap}
+@media (max-width:600px){.btn-oferta{white-space:normal;font-size:14.5px;padding-left:22px}.btn-oferta .bdot{width:46px;height:46px}}
+.pay-seals{display:block;width:min(465px,100%);height:auto;margin:34px auto 0;opacity:.7}
+.btn.dark{background:#000;color:#fff}
+.btn.dark:hover{background:#111;box-shadow:0 14px 40px -12px rgba(0,0,0,.6)}
+.btn.dark .bdot{background:var(--g)}.btn.dark .bdot::before{background:#000}
+.cta{display:flex;flex-direction:column;align-items:center;margin-top:50px}
+.micro{margin-top:14px;font:400 14px/1.5 var(--fb);color:rgba(255,255,255,.6);text-align:center}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:110px;display:flex;align-items:center;justify-content:space-between;padding:0 max(20px,calc((100vw - 1340px)/2));transition:height .4s,background .4s}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font:600 18px/1.05 var(--fb);letter-spacing:-.01em;color:#fff;transition:opacity .4s}
+.logo-mark{width:42px;height:42px;flex:none}
+.pill{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:4px;padding:8px;border-radius:50px;background:rgba(40,40,40,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:background .3s}
+.pill a{padding:17px 24px;border-radius:50px;text-decoration:none;font:500 12.5px/1 var(--fb);letter-spacing:.04em;text-transform:uppercase;color:rgba(255,255,255,.82);white-space:nowrap;transition:color .3s,background .3s}
+.pill a:hover,.pill a.on{color:#fff;background:rgba(255,255,255,.09)}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;padding:18px 28px;border-radius:50px;background:var(--g);color:var(--ink);text-decoration:none;font:600 12.5px/1 var(--fb);letter-spacing:.04em;text-transform:uppercase;transition:opacity .4s,transform .3s}
+.nav-cta:hover{transform:scale(1.04)}
+.nav-cta svg{width:10px;height:10px}
+.nav-burger,.nav-menu{display:none}
+.nav.scrolled{height:76px}
+.nav.scrolled .logo,.nav.scrolled .nav-cta{opacity:0;pointer-events:none}
+.nav.scrolled .pill{background:#0000008f;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+#hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:0 0 28px;background:#000 url("img/hero/hero-luz.webp?v=33") left top/auto 100% no-repeat}
+.hero-in{display:grid;grid-template-columns:1fr min(700px,50%);gap:30px;align-items:center;width:min(1340px,100% - 40px);margin-inline:auto}
+.pre{font:500 12px/1.5 var(--fb);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:130px;max-width:42ch}
+#hero h1 .nb{white-space:nowrap}
+#hero h1{margin-top:28px;font:400 clamp(48px,6.7vw,98px)/1 var(--fd);text-transform:uppercase;color:var(--g);width:100%}
+.sub{margin:40px 0 0;font:400 clamp(16px,1.45vw,20px)/1.5 var(--fb);color:#ececec;max-width:30em;text-wrap:balance}
+.badge{display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;max-width:560px;min-height:78px;margin-top:64px;padding:10px 28px 10px 14px;border-radius:50px;background:#201f1f}
+.avs{display:flex;flex:none}
+.avs img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid #201f1f;margin-left:-10px}
+.avs img:first-child{margin-left:0}
+.badge strong{flex:none;font:600 26px/1 var(--fb);color:#ececec;white-space:nowrap}
+.badge span{font:200 14px/1.3 var(--fb);color:#ececec;text-align:left;max-width:26ch;margin-left:auto}
+.close{margin-top:68px;font:300 clamp(14px,1.2vw,17px)/1.5 var(--fb);color:#ececec}
+.close b{color:var(--g);font-weight:700}
+.vmq{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;height:100vh;height:100svh;overflow:hidden}
+.vcol{overflow:hidden}
+.vtrack{display:flex;flex-direction:column;gap:12px;animation:vup 26s linear infinite}
+.vcol.down .vtrack{animation-name:vdown;animation-duration:30s}
+@keyframes vup{to{transform:translateY(-50%)}}
+@keyframes vdown{from{transform:translateY(-50%)}to{transform:translateY(0)}}
+.vcard{position:relative;aspect-ratio:235/310;border-radius:14px;overflow:hidden;background:#0d2a18}
+.vcard img{width:100%;height:100%;object-fit:cover}
+.vcard .lbl{position:absolute;left:16px;bottom:16px;right:16px;font:500 13px/1.15 var(--fb);letter-spacing:.06em;text-transform:uppercase;color:#fff}
+.vcard .dot{position:absolute;top:12px;right:12px;width:7px;height:7px;border-radius:50%;background:#fff}
+#faixa{height:50px;background:var(--g);overflow:hidden;display:flex;align-items:center}
+.faixa-track{display:flex;align-items:center;gap:30px;padding-right:30px;white-space:nowrap;will-change:transform;animation:moveLeft 30s linear infinite}
+@keyframes moveLeft{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.faixa-track p{font:400 clamp(20px,1.9vw,26px)/1 var(--fb);text-transform:uppercase;color:var(--ink)}
+.faixa-track img{width:34px;height:34px}
+#aula{padding:130px 0 120px;background:radial-gradient(circle at 50% 30%,rgba(217,198,198,.22) 0%,#050505 62%)}
+#aula .h2{font-size:clamp(28px,3.75vw,54px);color:rgba(255,255,255,.75);max-width:21em;margin-inline:auto}
+#aula .h2 .serif{color:#fff}
+.player{margin:60px auto 0;width:min(1000px,100%);aspect-ratio:16/9;border-radius:28px;padding:12px;background:#fff}
+.player-in{position:relative;width:100%;height:100%;border-radius:18px;overflow:hidden;cursor:pointer;background:#111}
+.player-in img{width:100%;height:100%;object-fit:cover}
+.player-in iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.sound{position:absolute;top:16px;left:16px;display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:6px;background:var(--g);color:var(--ink);font:700 11px/1 var(--fb);letter-spacing:.04em;text-transform:uppercase}
+.play{position:absolute;inset:0;margin:auto;width:92px;height:92px;border-radius:50%;display:grid;place-items:center;background:rgba(61,204,112,.95);animation:ring 2s infinite}
+.play svg{width:32px;height:32px;margin-left:6px;fill:var(--ink)}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(61,204,112,.55)}100%{box-shadow:0 0 0 30px rgba(61,204,112,0)}}
+#problema{padding:140px 0;background:#121010}
+#problema .h2{color:#d1d1d1;max-width:17em;margin-inline:auto}
+#problema .h2 b{color:#fff;font-weight:600}
+#aula .h2,#problema .h2{font-family:"Newsreader",Georgia,serif;letter-spacing:-.01em}
+#aula .h2 .serif,#problema .h2 .serif{font-family:"Newsreader",Georgia,serif;font-size:1em}
+.sx-wrap{position:relative;margin-top:70px}
+.sx{overflow:hidden;border-radius:48px}
+.sx-slide{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;height:520px;padding:0 70px;border-radius:48px;background:#2a2727;overflow:hidden}
+.sx-media{display:contents}
+.sx-phone{position:relative;align-self:start;justify-self:center;margin-top:34px;width:min(300px,100%);aspect-ratio:9/19.5;border-radius:54px;padding:3px;
+  background:linear-gradient(135deg,#f2f2f4 0%,#a7a9ae 22%,#e6e7ea 45%,#8d8f94 70%,#d7d8db 100%);
+  box-shadow:0 45px 80px -28px rgba(0,0,0,.75),inset 0 0 0 1px rgba(255,255,255,.55),inset 0 0 0 2px rgba(0,0,0,.18)}
+.sx-phone::before,.sx-phone::after{content:"";position:absolute;width:3px;background:linear-gradient(90deg,#7c7e83,#c9cace);border-radius:2px}
+.sx-phone::before{left:-3px;top:19%;height:34px;box-shadow:0 56px 0 #a4a6ab,0 112px 0 #a4a6ab}
+.sx-phone::after{right:-3px;top:27%;height:86px}
+.sx-phone .scr{position:relative;width:100%;height:100%;border-radius:51px;padding:8px;background:#030303;overflow:hidden}
+.sx-phone .scr::before{content:"";position:absolute;z-index:2;top:17px;left:50%;transform:translateX(-50%);width:31%;height:27px;border-radius:20px;background:#000;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+.sx-phone .scr::after{content:"";position:absolute;inset:8px;border-radius:43px;background:linear-gradient(125deg,rgba(255,255,255,.1) 0%,rgba(255,255,255,0) 32%);pointer-events:none}
+.sx-phone img{width:100%;height:100%;object-fit:cover;border-radius:43px}
+.sx-tag{display:inline-block;padding:9px 20px;border-radius:50px;background:#4a4646;font:500 15px/1 var(--fb);text-transform:uppercase;letter-spacing:.04em}
+.sx-txt h3{margin-top:22px;font:400 clamp(24px,2.5vw,36px)/1.15 var(--fb);letter-spacing:-.01em}
+.sx-txt p{margin-top:18px;font:300 clamp(15px,1.2vw,17.5px)/1.6 var(--fb);color:#cfcfcf}
+.sx-btn{position:absolute;top:50%;z-index:5;width:42px;height:42px;margin-top:-21px;cursor:pointer;border:0;padding:0;background:none}
+.sx-btn img{width:100%;height:100%}
+.sx-btn.prev{left:-62px}.sx-btn.next{right:-62px}
+#problema .disp{margin-top:110px;color:var(--g)}
+.disp-sub{max-width:24em;margin:24px auto 0;font:400 clamp(20px,2.2vw,30px)/1.35 var(--fb);color:#f2f2f2;text-align:center;text-wrap:balance}
+.prose{width:min(1040px,100%);margin:0 auto}
+.prose p.desc{margin-top:40px}
+.clark{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;margin-top:50px;padding:36px 40px;border-radius:34px;border:1px solid rgba(255,255,255,.24);text-align:left}
+.clark-img{grid-column:1/-1;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:22px}
+.clark-ic{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--g);color:var(--ink);font:400 30px/1 var(--fd)}
+.clark p{font:300 clamp(16px,1.35vw,19.5px)/1.65 var(--fb);color:#e5e5e5}
+.master{margin-top:60px;padding:40px 46px;border-radius:34px;background:rgba(61,204,112,.08);border:1px solid var(--g);font:400 clamp(20px,2.2vw,32px)/1.35 var(--fb);letter-spacing:-.01em;text-align:center;text-wrap:balance}
+#metodo{padding:140px 0 0;background:linear-gradient(#d1d1d1 0%,#9e9e9e 100%);color:#1e1e1e;overflow:hidden}
+#metodo .h2{color:#1e1e1e;max-width:12.5em;margin-inline:auto}
+#metodo .h2 .serif{color:var(--g-ink);display:block}
+#metodo .desc{color:#131313;width:min(1040px,100%);margin:40px auto 0}
+#metodo .desc b{font-weight:700}
+#metodo .desc .n{display:inline-grid;place-items:center;width:30px;height:30px;margin-right:8px;border-radius:50%;background:var(--g);color:var(--ink);font:400 15px/1 var(--fd);vertical-align:3px}
+.stage{position:relative;height:clamp(640px,80vw,1150px);margin-top:120px}
+.circ{position:absolute;left:50%;top:0;width:min(1000px,80%);transform:translateX(-50%);filter:hue-rotate(125deg) saturate(.85)}
+.hand{position:absolute;left:50%;bottom:0;width:min(640px,66%);aspect-ratio:1000/1432;transform:translateX(-50%);z-index:6;pointer-events:none}
+.hand .screen{position:absolute;left:32.40%;top:5.04%;width:35.10%;height:51.17%;border-radius:11%/6%;overflow:hidden;background:#0b1f12}
+.hand .screen img{width:100%;height:100%;object-fit:cover}
+.hand>img{position:absolute;inset:0;width:100%;height:100%}
+.cube{position:absolute;z-index:8;width:clamp(110px,18vw,250px);aspect-ratio:1;padding:clamp(8px,1vw,14px);border-radius:clamp(22px,2.6vw,40px);
+  background:linear-gradient(145deg,rgba(255,255,255,.78),rgba(255,255,255,.2) 45%,rgba(255,255,255,.06));border:1px solid rgba(255,255,255,.9);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  box-shadow:0 40px 60px -30px rgba(0,0,0,.45),inset 0 2px 0 rgba(255,255,255,1),inset 0 -14px 30px -14px rgba(18,122,61,.35);
+  transform:rotate(var(--r,0deg));transition:translate .5s cubic-bezier(.22,1,.36,1)}
+.cube .bob{width:100%;height:100%;animation:bob 6s ease-in-out infinite;animation-delay:var(--dl,0s)}
+.cube img{width:100%;height:100%;object-fit:cover;border-radius:clamp(14px,1.8vw,28px)}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.cube.c1{left:2%;top:4%;--r:-9deg}
+.cube.c2{right:2%;top:2%;--r:8deg;--dl:-2s}
+.cube.c3{left:16%;top:34%;--r:7deg;--dl:-4s}
+.cube.c4{right:15%;top:31%;--r:-8deg;--dl:-1s}
+.cube.c5{left:6%;top:64%;--r:-5deg;--dl:-3s}
+.cube.c6{right:5%;top:62%;--r:10deg;--dl:-5s}
+.stage .cta{position:absolute;left:0;right:0;bottom:60px;z-index:10;margin:0;padding:0 20px}
+.stage .micro{color:rgba(255,255,255,.75);text-shadow:0 1px 8px rgba(0,0,0,.6)}
+#para-quem{padding:140px 0;background:#131313;overflow:hidden}
+#para-quem .h2{max-width:18em;margin-inline:auto}
+.tri{display:flex;justify-content:center;gap:24px;margin-top:70px}
+.tri-card{all:unset;box-sizing:border-box;cursor:pointer;flex:1;max-width:32%;min-height:250px;padding:34px 40px;border-radius:34px;border:1px solid rgba(255,255,255,.24);display:flex;flex-direction:column;justify-content:center;text-align:left;transition:border-color .4s,background .4s}
+.tri-card:hover{border-color:rgba(255,255,255,.5)}
+.tri-card.on{border-color:var(--g);background:rgba(61,204,112,.06)}
+.tri-card:focus-visible{outline:2px solid var(--g);outline-offset:4px}
+.tri-card h3{margin-top:0;font:500 clamp(20px,2.08vw,30px)/1.1 var(--fb);color:#f7f4f1;text-wrap:balance}
+.tri-card p{margin-top:16px;font:200 clamp(16px,1.5vw,22px)/1.35 var(--fb);color:#f7f4f1;text-wrap:balance}
+#caminho-externo{display:block;width:calc(64% + 48px);max-width:1000px;margin:0 auto;opacity:0;transition:opacity .4s ease}
+#caminho-externo.visible{opacity:1}
+#caminho-externo svg{display:block;width:100%;height:auto;overflow:visible}
+#caminho-externo .st1{fill:none;stroke:#fff;stroke-width:1;vector-effect:non-scaling-stroke}
+#path-esquerdo,#path-direito,#linha-central{transition:stroke-dashoffset 1.4s cubic-bezier(.4,0,.2,1)}
+#bolinha{fill:#131313;stroke:#fff;stroke-width:1;vector-effect:non-scaling-stroke;transition:fill .5s ease}
+.linha-scroll{display:none}
+#para-quem .disp{margin-top:10px;font-size:clamp(36px,4.9vw,70px);color:#f7f4f1}
+.pillbox{width:fit-content;max-width:min(760px,100%);margin:30px auto 0;padding:12px 40px;border-radius:60px;border:1px solid rgba(247,244,241,.4);font:300 clamp(17px,1.95vw,28px)/1.35 var(--fb);color:#f7f4f1;text-align:center;text-wrap:balance}
+.zoom{position:relative;margin-top:60px}
+.zoom .swiper{padding:40px 0;overflow:visible}
+.zoom .swiper-slide{width:320px;height:500px;transition:transform .35s,opacity .35s;opacity:.45}
+.zoom .swiper-slide-active{transform:scale(1.1);opacity:1;z-index:2}
+.zcard{height:100%;border-radius:24px;padding:26px 24px;background:#1f1f1f;border:1px solid rgba(255,255,255,.1);font:300 14.5px/1.62 var(--fb);color:#d8d8d8;overflow:hidden}
+.zcard .ic{display:block;width:58px;height:58px;padding:13px;margin-bottom:18px;border-radius:17px;color:#04140A;background:var(--g);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 12px 24px -14px rgba(61,204,112,.8)}
+.zcard b{display:block;margin-bottom:10px;font:600 17px/1.3 var(--fb);color:#fff}
+.zimg{position:relative;height:100%;border-radius:24px;overflow:hidden}
+.zimg img{width:100%;height:100%;object-fit:cover}
+.zimg .lbl{position:absolute;left:18px;right:18px;bottom:18px;font:800 14px/1.15 var(--fb);text-transform:uppercase;color:#fff}
+.zimg .dot{position:absolute;top:14px;right:14px;width:8px;height:8px;border-radius:50%;background:#fff}
+#modulos{padding:120px 0 110px;background:#f4f1ed;color:#1e1e1e;overflow:hidden}
+#modulos .h2{color:#1e1e1e;max-width:16em;margin-inline:auto;font-size:clamp(32px,4.8vw,69px)}
+#modulos .h2 .serif{color:var(--g-ink)}
+.hmq{overflow:hidden;margin-top:60px}
+.hmq+.hmq{margin-top:22px}
+.htrack{display:flex;gap:22px;width:max-content;animation:hleft 60s linear infinite}
+.hmq:hover .htrack{animation-play-state:paused}
+@keyframes hleft{to{transform:translateX(-50%)}}
+@keyframes hright{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.mcard{width:320px;flex:none;padding:12px 12px 22px;border-radius:22px;background:#fff;box-shadow:0 20px 40px -26px rgba(0,0,0,.35)}
+.mcard .cv{position:relative;aspect-ratio:16/10;border-radius:14px;overflow:hidden}
+.mcard .cv img{width:100%;height:100%;object-fit:cover}
+.mcard .k{position:absolute;top:10px;left:10px;padding:7px 12px;border-radius:50px;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);font:600 10.5px/1 var(--fb);letter-spacing:.06em;text-transform:uppercase;color:#fff}
+.mcard h3{margin:16px 6px 0;font:600 18px/1.3 var(--fb)}
+.mcard p{margin:8px 6px 0;font:400 14.5px/1.55 var(--fb);color:rgba(30,30,30,.7)}
+#contraste{padding:140px 0;background:#131313}
+#contraste .h2{max-width:18em;margin-inline:auto}
+#contraste .h2 .serif{color:var(--g)}
+.vs2{margin-top:70px}
+.vs-top{display:grid;grid-template-columns:1fr 84px 1fr;gap:20px;align-items:stretch;margin-bottom:14px}
+.vs-pic{position:relative;margin:0;aspect-ratio:16/9;border-radius:28px;overflow:hidden;background:#1b1b1b;border:1px solid rgba(255,255,255,.14)}
+.vs-pic.new{border-color:var(--g)}
+.vs-pic img{width:100%;height:100%;object-fit:cover}
+.vs-pic.old img{filter:grayscale(1) brightness(.8)}
+.vs-pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.82))}
+.vs-pic figcaption{position:absolute;z-index:2;left:22px;right:22px;bottom:20px;display:flex;align-items:center;gap:12px}
+.vs-pic figcaption i{width:40px;height:40px;flex:none;border-radius:50%;display:grid;place-items:center;font-style:normal}
+.vs-pic figcaption i svg{width:18px;height:18px}
+.vs-pic.old figcaption i{background:rgba(255,255,255,.14);color:#cfcfcf}
+.vs-pic.new figcaption i{background:var(--g);color:var(--ink)}
+.vs-pic strong{display:block;font:600 19px/1.2 var(--fb);color:#fff}
+.vs-pic small{display:block;margin-top:3px;font:300 13px/1.3 var(--fb);color:rgba(255,255,255,.7)}
+.vs-vs{align-self:center;justify-self:center;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.2);font:400 22px/1 var(--fs);font-style:italic;color:rgba(255,255,255,.7)}
+.vs-row{display:grid;grid-template-columns:1fr 84px 1fr;gap:20px;align-items:center;padding:22px 0;border-top:1px dashed rgba(255,255,255,.12)}
+.vs-cell{padding:22px 26px;border-radius:22px;font:300 15.5px/1.6 var(--fb)}
+.vs-cell b{display:block;margin-bottom:8px;font:600 12px/1 var(--fb);letter-spacing:.12em;text-transform:uppercase}
+.vs-cell.old{color:#9d9d9d;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.07)}
+.vs-cell.old b{color:#7c7c7c}
+.vs-cell.new{color:#f1f1f1;background:rgba(61,204,112,.07);border:1px solid rgba(61,204,112,.4)}
+.vs-cell.new b{color:var(--g)}
+.vs-ic{justify-self:center;width:64px;height:64px;padding:15px;border-radius:19px;color:var(--ink);background:var(--g);box-shadow:0 0 0 8px rgba(61,204,112,.08),0 14px 30px -14px rgba(61,204,112,.8)}
+.vs-ic svg{width:100%;height:100%}
+#o-que-e{min-height:900px;padding:120px 0 0;background:var(--g-sec);color:#fffaea;overflow:hidden}
+#o-que-e .h2{color:#fffaea;max-width:13.5em;margin-inline:auto}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-top:70px}
+.why-img{align-self:end;justify-self:center;width:min(660px,100%);aspect-ratio:1200/1100}
+.why-img img{width:100%;height:100%;object-fit:contain;object-position:center bottom}
+.why-txt{padding-bottom:110px}
+.why-txt p{font:300 clamp(17px,1.5vw,22px)/1.6 var(--fb);color:#fff}
+.why-txt p+p{margin-top:22px}
+.why-txt .hl{font-weight:500}
+.why-txt .cta{align-items:flex-start;margin-top:40px}
+#depoimentos{padding:130px 0 120px;background:#fff;color:#1e1e1e;overflow:hidden}
+.big-n{font:400 clamp(64px,7vw,104px)/1 var(--fs);font-style:italic;text-align:center}
+#depoimentos .h2{color:#1e1e1e;max-width:14em;margin:10px auto 0;line-height:1.2}
+.trust{display:flex;justify-content:center;margin:56px auto 0;width:min(820px,100%)}
+.trust div{flex:1;padding:0 30px;text-align:center}
+.trust div+div{border-left:1px solid #e3e3e3}
+.trust strong{display:block;font:400 56px/1 var(--fs);font-style:italic;color:var(--g-ink)}
+.trust span{display:block;margin-top:10px;font:400 15px/1.5 var(--fb);color:#555}
+#depoimentos .proof-h{margin-top:110px;font-size:clamp(28px,3.6vw,52px);max-width:18em}
+.proof-h .serif{color:var(--g-ink)}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:50px}
+.metric{display:grid;grid-template-columns:minmax(0,230px) 1fr;gap:28px;align-items:center;padding:22px;border-radius:24px;background:#f4f1ed}
+.metric img{width:100%;height:auto;object-fit:contain;border-radius:14px;background:#fff;border:1px solid #e4e1dc;box-shadow:0 18px 36px -22px rgba(0,0,0,.35)}
+.metric .net{font:600 12px/1 var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--g-ink)}
+.metric .num{margin-top:10px;font:400 clamp(36px,3.6vw,50px)/1 var(--fs);font-style:italic}
+.metric p:last-child{margin-top:10px;font:400 15px/1.5 var(--fb);color:#555}
+.t-wrap{position:relative;margin-top:60px}
+.t-wrap::before,.t-wrap::after{content:"";position:absolute;top:0;bottom:0;width:18%;z-index:2;pointer-events:none}
+.t-wrap::before{left:0;background:linear-gradient(90deg,#fff,rgba(255,255,255,0))}
+.t-wrap::after{right:0;background:linear-gradient(270deg,#fff,rgba(255,255,255,0))}
+.t-row{display:flex;gap:20px;width:max-content;animation:hleft 55s linear infinite;align-items:flex-start}
+.t-row+.t-row{margin-top:20px;animation-name:hright;animation-duration:62s}
+.t-wrap:hover .t-row{animation-play-state:paused}
+.tcard{flex:none;width:300px;margin:0;border-radius:10px;border:1px solid #d9d9d9;background:#fff;overflow:hidden}
+.tcard img{width:100%;height:auto;max-height:380px;object-fit:contain;object-position:top}
+.tcard figcaption{display:none;padding:20px}
+.tcard.noimg figcaption{display:block}
+.tcard .who-t{font:700 13px/1 var(--fb)}
+.tcard .src{margin-top:6px;font:500 11px/1 var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--g-ink)}
+.tcard blockquote{margin:12px 0 0;font:400 13.5px/1.6 var(--fb);color:#444}
+.quote{position:relative;width:min(900px,100%);margin:100px auto 0;padding:30px 70px}
+.quote p{font:400 clamp(22px,2.6vw,38px)/1.3 var(--fb);letter-spacing:-.01em;text-align:center;text-wrap:balance}
+.quote .qa{position:absolute;left:0;top:-20px;width:clamp(50px,6vw,84px)}
+.quote .qb{position:absolute;right:0;bottom:-40px;width:clamp(50px,6vw,84px)}
+#bonus{padding:140px 0 30px;background:#05080d}
+#bonus .h2 .serif,#planos .h2 .serif{color:var(--g)}
+#bonus .h2{max-width:17em;margin-inline:auto}
+.bonus{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:60px}
+.b-card{display:grid;grid-template-columns:190px 1fr;gap:26px;align-items:center;padding:22px;border-radius:40px;background:#1b1e23}
+.b-card .cv{aspect-ratio:4/5;border-radius:24px;overflow:hidden}
+.b-card .cv img{width:100%;height:100%;object-fit:cover}
+.tag{display:inline-block;padding:8px 14px;border-radius:50px;background:#2c3037;font:500 11px/1.2 var(--fb);letter-spacing:.06em;text-transform:uppercase;color:#d5d5d5}
+.b-card h3{margin-top:14px;font:500 22px/1.25 var(--fb)}
+.b-card p{margin-top:10px;font:300 15px/1.6 var(--fb);color:#bdbdbd}
+.b-price{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:16px;font:500 13px/1.3 var(--fb)}
+.b-price s{color:#8a8f99}
+.b-price em{font-style:normal;padding:6px 12px;border-radius:50px;background:var(--g);color:var(--ink);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px}
+#planos{padding:110px 0 140px;background:#05080d}
+#planos .h2{max-width:15em;margin-inline:auto;line-height:1.2}
+.ck{width:min(1180px,100%);margin:60px auto 0;padding:30px 70px 50px;border-radius:60px;background:#1b1e23}
+.ck-row{display:flex;align-items:center;gap:26px;min-height:110px;padding:18px 0;border-bottom:3px dotted rgba(230,230,230,.16)}
+.ck-row svg{width:22px;height:22px;flex:none;stroke:#fff}
+.ck-row p{font:200 clamp(18px,2vw,28px)/1.35 var(--fb);text-align:left}
+.ck-price{display:grid;grid-template-columns:auto auto 1fr;gap:40px;align-items:center;padding-top:40px}
+.ck-price .from{font:500 12px/1.4 var(--fb);letter-spacing:.14em;text-transform:uppercase;color:#d5d5d5}
+.ck-price .now{display:flex;align-items:baseline;gap:10px;margin-top:8px}
+.ck-price .now strong{font:500 clamp(46px,5vw,70px)/1 var(--fb);color:#fff;white-space:nowrap}
+.ck-price .now span{font:300 15px/1.4 var(--fb);color:#d5d5d5;max-width:17ch}
+.ck-price .arrow{width:60px}
+.ck-price .anchor{font:300 clamp(16px,1.5vw,20px)/1.45 var(--fb);color:#d5d5d5;text-align:right}
+#lennon{padding:140px 0;background:#f9f9f9;color:#000;overflow:hidden}
+.who{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.who .eyebrow{color:var(--g-ink)}
+.who-name{margin-top:14px;font:400 clamp(72px,9vw,128px)/.9 var(--fs);font-style:italic;color:var(--g-ink)}
+.manifesto p{margin-top:24px;font:400 clamp(17px,1.5vw,21px)/1.65 var(--fb);color:#111}
+.collage{position:relative;aspect-ratio:4/5;width:min(520px,100%);justify-self:center}
+.collage .main{position:absolute;inset:9% 8% 7% 8%;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.collage .s1{position:absolute;right:-3%;top:0;width:30%;aspect-ratio:3/4;border-radius:14px;overflow:hidden;transform:rotate(5deg);box-shadow:0 20px 40px -14px rgba(0,0,0,.45);z-index:2}
+.collage .s2{position:absolute;left:-3%;bottom:-2%;width:34%;aspect-ratio:1;border-radius:14px;overflow:hidden;transform:rotate(-6deg);box-shadow:0 20px 40px -14px rgba(0,0,0,.45);z-index:2}
+.collage img{width:100%;height:100%;object-fit:cover}
+#garantia{padding:120px 0;background:var(--g-sec);overflow:hidden}
+.guar{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.g-media{position:relative;width:min(560px,100%);aspect-ratio:1}
+.g-blob{position:relative;width:100%;height:100%;border-radius:22% 22% 20% 20%/22% 22% 20% 20%;background:#0d0d0d;overflow:hidden}
+.g-screen{position:absolute;left:33.2%;top:7.7%;width:33%;height:69.1%;border-radius:8% / 3.6%;overflow:hidden;background:#07110b url("img/marca/a-cadeado-pessoa.svg") center/24% no-repeat}
+.g-hands{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.mockup{--p:1;--mw:clamp(780px,62vw,1560px);--rise:260px;display:block;height:auto;margin:30px 0 0 calc(50% - var(--mw)/2);width:var(--mw);max-width:none;
+  transform:translate3d(0,calc((1 - var(--p)) * var(--rise)),0) scale(calc(.94 + .06 * var(--p)));opacity:calc(.3 + .7 * var(--p));will-change:transform,opacity}
+.m-prata{filter:drop-shadow(0 38px 36px rgba(60,50,40,.28))}
+.m-preto{--mw:100%;margin:0;filter:drop-shadow(0 34px 34px rgba(0,0,0,.6))}
+.m-monitor{--mw:clamp(620px,46vw,1020px);margin-top:50px;filter:drop-shadow(0 34px 38px rgba(0,0,0,.55))}
+#bonus .wrap{width:min(1560px,100% - 40px)}
+.bonus-split{display:grid;grid-template-columns:1.6fr 1fr;gap:56px;align-items:center;margin-top:70px}
+.bonus-split .bonus{grid-template-columns:1fr;margin-top:0}
+.bonus-split .b-card{grid-template-columns:150px 1fr;gap:20px;padding:18px;border-radius:32px}
+.vidro{position:absolute;right:0;bottom:-60px;width:160px;height:160px;border-radius:50%;display:grid;place-items:center;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.selo{width:180px;height:180px;flex:none}
+.selo-svg{width:100%;height:100%;overflow:visible}
+.selo .borda{fill:rgba(255,255,255,.1);stroke:rgba(255,255,255,.28);stroke-width:1}
+.selo .texto-rotativo{transform-origin:50% 50%;animation:girar 12s linear infinite}
+.selo .texto{font:600 16px var(--fb);letter-spacing:2px;fill:#fff;text-transform:uppercase}
+.selo .numero{font:700 105px var(--fb);fill:#04140A;dominant-baseline:middle}
+@keyframes girar{to{transform:rotate(360deg)}}
+#garantia h2{font:400 clamp(34px,4.72vw,68px)/1.1 var(--fb);letter-spacing:-.02em;color:#fff}
+.guar p.txt{margin-top:26px;font:300 clamp(17px,1.5vw,22px)/1.6 var(--fb);color:#fff}
+#faq{padding:120px 0;background:linear-gradient(113deg,#0E4A2A 0%,#0A1712 100%)}
+#faq .h2 .serif{color:#fff}
+.faq{width:min(1180px,100%);margin:50px auto 0;display:grid;gap:16px}
+.qa{border-radius:16px;background:rgba(255,255,255,.09);transition:background .3s}
+.qa:hover,.qa[open]{background:rgba(255,255,255,.13)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 30px;font:300 clamp(17px,1.8vw,24px)/1.35 var(--fb)}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary svg{width:14px;height:14px;flex:none;transition:transform .3s}
+.qa[open] summary svg{transform:rotate(180deg)}
+.qa .ans{padding:0 30px 26px;font:300 17px/1.7 var(--fb);color:rgba(255,255,255,.82)}
+#final{padding:140px 0;background:radial-gradient(circle at 50% 0%,rgba(217,198,198,.18) 0%,#050505 60%)}
+#final .h2{max-width:16em;margin-inline:auto}
+#final .h2 .serif{color:var(--g)}
+#final .desc{margin:34px auto 0;width:min(900px,100%);color:rgba(255,255,255,.85)}
+.timer{width:min(420px,80%);height:3px;margin:46px auto 0;border-radius:3px;background:rgba(255,255,255,.12);overflow:hidden}
+.timer i{display:block;height:100%;background:var(--g);transform-origin:left;animation:drain 8s linear infinite}
+@keyframes drain{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+#rodape{padding:30px 0 22px;background:#000;font:400 12.5px/1.6 var(--fb);color:rgba(255,255,255,.5)}
+.foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 32px}
+.foot .logo{font-size:13px;gap:8px}
+.foot .logo-mark{width:26px;height:26px}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 24px}
+.foot nav a{text-decoration:none;color:rgba(255,255,255,.65)}
+.foot nav a:hover{color:var(--g)}
+.foot .disc{flex-basis:100%;margin:2px 0 0;font-size:11.5px;color:rgba(255,255,255,.38)}
+.copy{margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);font-size:11.5px;color:rgba(255,255,255,.38)}
+@media (max-width:1366px){
+  .sx-btn.prev{left:12px}.sx-btn.next{right:12px}
+}
+@media (max-width:1100px){
+  .pill a{padding:12px}
+}
+@media (max-width:900px){
+  .pill{display:none}
+  .nav{position:absolute;top:16px;left:2%;right:2%;height:62px;padding:0 8px 0 18px;border-radius:24px;background:rgba(20,20,20,.55);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1)}
+  .nav.scrolled{height:62px;background:#0000008f}
+  .nav.scrolled .logo,.nav.scrolled .nav-cta{opacity:1;pointer-events:auto}
+  .logo{font-size:13px;gap:8px;flex:none}.logo-mark{width:30px;height:30px}
+  .nav-cta{display:none!important}
+  .nav-cta{margin-left:auto;margin-right:8px;padding:11px 12px;font-size:9.5px;white-space:nowrap;letter-spacing:.02em;background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px)}
+  .nav-cta svg{display:none}
+  .nav-burger{display:grid;place-content:center;gap:4px;width:44px;height:44px;flex:none;border:0;border-radius:50%;background:var(--g);cursor:pointer}
+  .nav-burger span{display:block;width:16px;height:2px;border-radius:2px;background:var(--ink);transition:transform .3s,opacity .3s}
+  .nav.open .nav-burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+  .nav.open .nav-burger span:nth-child(2){opacity:0}
+  .nav.open .nav-burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+  .nav-menu{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;padding:14px;border-radius:20px;background:rgba(10,10,10,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .3s,transform .3s}
+  .nav.open .nav-menu{opacity:1;transform:none;pointer-events:auto}
+  .nav-menu a{padding:14px 12px;border-radius:12px;text-decoration:none;font:500 13px/1 var(--fb);letter-spacing:.05em;text-transform:uppercase;color:#fff;text-align:center}
+  .nav-menu a:hover{background:rgba(255,255,255,.08)}
+  #hero{min-height:0;display:block;padding:0 0 40px;background:#000}
+  .hero-in{display:flex;flex-direction:column-reverse;gap:0;padding-top:0;width:min(100% - 20px,640px)}
+  .vmq{height:58vh;min-height:380px;margin-top:0;-webkit-mask:linear-gradient(180deg,#000 45%,transparent 92%);mask:linear-gradient(180deg,#000 45%,transparent 92%)}
+  .hero-in>div:first-child{position:relative;z-index:2;margin-top:-150px;text-align:center;display:flex;flex-direction:column;align-items:center}
+  .pre{margin-top:0;font-size:11px;max-width:34ch}
+  #hero h1{width:94%;margin-top:14px;font-size:clamp(46px,14vw,60px);text-align:center}
+  .sub{margin:16px 0 0;font-size:16px;max-width:30em;text-align:center}
+  .badge{margin-top:26px;min-height:54px;padding:8px 14px 8px 10px;gap:10px;max-width:100%}
+  .avs img{width:30px;height:30px;margin-left:-8px}
+  .badge strong{font-size:15px}
+  .badge span{font-size:10px;max-width:none;margin-left:0}
+  .close{margin-top:24px;font-size:16px;text-align:center}
+  .vcard .lbl{left:10px;right:8px;bottom:10px;font-size:9.5px;letter-spacing:.03em}
+  .sx-wrap{margin-inline:14px}
+  .sx,.sx-slide{border-radius:30px}
+  .sx-slide{display:flex;flex-direction:column;align-items:stretch;height:auto;padding:16px 16px 26px;gap:20px}
+  .sx-media{display:flex;justify-content:center;height:230px;padding-top:22px;border-radius:22px;background:#3a3636;overflow:hidden}
+  .sx-phone{margin-top:0;width:170px;border-radius:34px;flex:none}
+  .sx-phone .scr{border-radius:31px;padding:5px}.sx-phone .scr::after{inset:5px;border-radius:26px}
+  .sx-phone img{border-radius:26px}.sx-phone .scr::before{top:10px;height:16px}
+  .sx-txt{padding:0 8px}
+  .sx-tag{padding:7px 16px;font-size:12px}
+  .sx-txt h3{margin-top:14px;font-size:22px}
+  .sx-txt p{margin-top:12px;font-size:15px;line-height:1.55}
+  .sx-btn{top:115px;margin-top:0;width:34px;height:34px}
+  .sx-btn.prev{left:-12px}.sx-btn.next{right:-12px}
+  .tri{flex-direction:column;align-items:stretch;gap:12px}
+  .tri-card{max-width:none;min-height:0;padding:24px 26px}
+  #caminho-externo{display:none}
+  .linha-scroll{display:block;width:12px;height:56px;margin:0 auto;opacity:0;transition:opacity .4s ease}
+  .linha-scroll.visible{opacity:1}
+  .linha-scroll svg{display:block;overflow:visible}
+  .linha-scroll .linha-path{fill:none;stroke:#fff;stroke-width:1;transition:stroke-dashoffset 1.4s cubic-bezier(.4,0,.2,1)}
+  .linha-scroll .linha-bolinha{fill:#131313;stroke:#fff;stroke-width:1;transition:fill .5s ease}
+  .bonus,.metrics,.why,.guar,.who,.bonus-split{grid-template-columns:1fr}
+  .vs-top{grid-template-columns:1fr 1fr;gap:10px}.vs-vs{display:none}
+  .vs-pic{border-radius:18px}.vs-pic figcaption{left:12px;right:10px;bottom:10px;gap:8px}.vs-pic figcaption i{width:28px;height:28px}.vs-pic figcaption i svg{width:13px;height:13px}.vs-pic strong{font-size:12.5px}.vs-pic small{display:none}
+  .vs-row{grid-template-columns:1fr;gap:10px;padding:26px 0}
+  .vs-ic{grid-row:1;width:54px;height:54px;padding:13px}
+  .vs-cell{padding:18px 18px}
+  .mockup{--rise:90px;--mw:100%;margin:40px 0 0}
+  .m-monitor{--mw:100%}
+  .bonus-split{gap:30px}
+  .why{gap:40px}
+  .why-txt{padding-bottom:0;order:-1}
+  .why-img{justify-self:center}
+  .ck{padding:20px 26px 36px;border-radius:36px}
+  .ck-row{min-height:0;gap:16px}
+  .ck-price{grid-template-columns:1fr;gap:18px}
+  .ck-price .arrow{display:none}
+  .ck-price .anchor{text-align:left}
+  .g-media{justify-self:center}
+  .vidro{right:10px;bottom:-44px;width:130px;height:130px}.selo{width:146px;height:146px}
+  .quote{padding:30px 40px}
+  #rodape{padding:20px 0 14px;text-align:center}
+  .foot{flex-direction:column;justify-content:center;gap:8px}
+  .foot nav{justify-content:center;gap:4px 16px}
+  .foot .disc{margin:0;font-size:10.5px;line-height:1.5}
+  .copy{margin-top:10px;padding-top:8px;font-size:10.5px}
+}
+@media (max-width:768px){
+  #aula,#problema,#para-quem,#contraste,#lennon,#bonus,#final{padding-top:100px;padding-bottom:100px}
+  #metodo{padding-top:100px}
+  .stage{height:clamp(560px,150vw,760px);margin-top:70px}
+  .circ{width:100%}
+  .hand{width:min(420px,90%)}
+  .cube{width:clamp(78px,21vw,140px)}
+  .cube.c1{left:5%;top:4%}.cube.c2{right:5%;top:2%}
+  .cube.c3{left:3%;top:30%}.cube.c4{right:3%;top:28%}
+  .cube.c5{left:6%;top:55%}.cube.c6{right:6%;top:53%}
+  .stage .cta{bottom:30px}
+  .b-card,.bonus-split .b-card{grid-template-columns:1fr;gap:18px;padding:14px 14px 22px;border-radius:28px}
+  .b-card .cv,.bonus-split .b-card .cv{aspect-ratio:16/10;border-radius:20px}
+  .b-card>div:last-child{padding:0 8px}
+  .b-card h3{font-size:21px}
+  .b-price{flex-wrap:wrap}
+  .metric{grid-template-columns:1fr;gap:18px}
+  .metric img{max-width:320px;margin-inline:auto}
+  .trust{flex-direction:column;gap:26px}
+  .trust div+div{border-left:0}
+  .clark{grid-template-columns:1fr;padding:26px}
+  .master{padding:28px 22px}
+  #faixa{height:54px}
+}
+@media (max-width:480px){
+  .nav-cta{padding:12px 14px;font-size:10px}
+  .logo{font-size:14px}
+  .zoom .swiper-slide{width:280px;height:540px}
+  .mcard{width:270px}
+  .tcard{width:250px}
+  .qa summary{padding:18px 20px}.qa .ans{padding:0 20px 22px}
+  .quote{padding:30px 10px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wallet" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M8 16h30a3 3 0 0 1 3 3v17a3 3 0 0 1-3 3H11a3 3 0 0 1-3-3V13a4 4 0 0 1 4-4h22"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M41 24h-7a3.5 3.5 0 0 0 0 7h7"/></symbol>
+  <symbol id="i-home" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M7 23L24 9l17 14"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M11 20v19h26V20"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M25 11l-3 7 4 4-3 6"/></symbol>
+  <symbol id="i-heartcrack" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M24 39S8 29 8 18.5A8 8 0 0 1 22.5 13M25.5 13A8 8 0 0 1 40 18.5C40 29 24 39 24 39"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M24 13l-3 7 5 4-4 6 2 4"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M8 40h32"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M9 30l9-8 7 5 13-13"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M32 14h6v6"/></symbol>
+  <symbol id="i-award" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M17 40V25h14v15M5 40v-9h12M31 40v-7h12M3 40h42"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M18 12l3 3 3-6 3 6 3-3-1.5 7h-9z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M24 7a11 11 0 0 0-6.5 19.9c1.3 1 2 2.4 2 4V32h9v-1.1c0-1.6.7-3 2-4A11 11 0 0 0 24 7z"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 37h8M21.5 41h5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 48 48"><circle cx="16" cy="17" r="5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="17" r="5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M6 38a10 10 0 0 1 20 0M22 38a10 10 0 0 1 20 0"/></symbol>
+  <symbol id="i-smile" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M9 10c10-3 20-3 30 0v11c0 10-6.7 17-15 17S9 31 9 21z"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M16 25c4.5 4 11.5 4 16 0M16 18h4M28 18h4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M24 6l15 5.5v10c0 9.5-6.3 16-15 19-8.7-3-15-9.5-15-19v-10z"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M24 6v8l-3 4 3 3"/></symbol>
+  <symbol id="i-alarm" viewBox="0 0 48 48"><circle cx="24" cy="26" r="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M24 19v7l4.5 3M9 12l6-5M39 12l-6-5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 48 48"><rect x="14" y="6" width="20" height="36" rx="4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M21.5 10.5h5"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M24 5c2 7 11 10.5 11 22a11 11 0 0 1-22 0c0-5 3-8.5 3-8.5 0 3.2 1.6 5 3.3 5 0-7.5-1.3-11 4.7-18.5z"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 48 48"><rect x="5" y="15" width="34" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M43 21v6M11 21v6"/></symbol>
+  <symbol id="i-mirror" viewBox="0 0 48 48"><ellipse cx="24" cy="21" rx="12" ry="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M24 37v5M17 42h14"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></symbol>
+</svg>
+<header class="nav" id="nav">
+  <a class="logo" href="#hero"><img class="logo-mark" src="img/marca/a-cadeado-pessoa.svg?v=33" alt=""><span>Protocolo<br>Alter Ego</span></a>
+  <nav class="pill" aria-label="Navegação">
+    <a href="#para-quem">Para quem é</a>
+    <a href="#metodo">Como funciona</a>
+    <a href="#modulos">O que recebe</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#planos">Oferta</a>
+  </nav>
+  <a class="nav-cta js-checkout" href="#planos"><svg><use href="#i-chev"/></svg>Quero criar meu alter ego</a>
+  <button class="nav-burger" id="nav-burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
+  <nav class="nav-menu" id="nav-menu" aria-label="Menu"><a href="#para-quem">Para quem é</a><a href="#metodo">Como funciona</a><a href="#modulos">O que recebe</a><a href="#depoimentos">Depoimentos</a><a href="#planos">Oferta</a></nav>
+</header>
+<main>
+<section id="hero">
+  <div class="hero-in">
+    <div>
+      <p class="pre">PARA QUEM SABE EXATAMENTE O QUE PRECISA FAZER, MAS NÃO CONSEGUE.</p>
+      <h1>APRENDA A SER <span class="nb">O SEU ALTER EGO</span></h1>
+      <h2 class="sub">vença a autossabotagem, pare de travar na hora de cobrar o que merece, recupere o respeito nas suas relações e assuma o comando da sua rotina sem hesitar</h2>
+      <div class="badge">
+        <div class="avs"><img src="img/hero/avatar-1.jpg?v=33" alt=""><img src="img/hero/avatar-2.jpg?v=33" alt=""><img src="img/hero/avatar-3.jpg?v=33" alt=""><img src="img/hero/avatar-4.jpg?v=33" alt=""></div>
+        <strong class="count" data-to="70" data-pre="+" data-suf=" mil">+70 mil</strong>
+        <span>pessoas já acompanham essa metodologia nas redes sociais.</span>
+      </div>
+      <p class="close"><b>Chegou a hora de você</b> parar de aceitar a própria passividade.</p>
+    </div>
+    <div class="vmq" aria-hidden="true">
+      <div class="vcol down"><div class="vtrack">
+        <div class="vcard"><img src="img/hero/hero-01-dinheiro.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Dinheiro</span></div>
+        <div class="vcard"><img src="img/hero/hero-02-carreira.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Carreira</span></div>
+        <div class="vcard"><img src="img/hero/hero-03-relacionamentos.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Relacionamentos</span></div>
+        <div class="vcard"><img src="img/hero/hero-01-dinheiro.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Dinheiro</span></div>
+        <div class="vcard"><img src="img/hero/hero-02-carreira.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Carreira</span></div>
+        <div class="vcard"><img src="img/hero/hero-03-relacionamentos.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Relacionamentos</span></div>
+      </div></div>
+      <div class="vcol"><div class="vtrack">
+        <div class="vcard"><img src="img/hero/hero-04-familia.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Família</span></div>
+        <div class="vcard"><img src="img/hero/hero-05-rotina.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Rotina</span></div>
+        <div class="vcard"><img src="img/hero/hero-06-corpo.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Corpo</span></div>
+        <div class="vcard"><img src="img/hero/hero-04-familia.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Família</span></div>
+        <div class="vcard"><img src="img/hero/hero-05-rotina.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Rotina</span></div>
+        <div class="vcard"><img src="img/hero/hero-06-corpo.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Corpo</span></div>
+      </div></div>
+      <div class="vcol down"><div class="vtrack">
+        <div class="vcard"><img src="img/hero/hero-07-disciplina.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Disciplina</span></div>
+        <div class="vcard"><img src="img/hero/hero-08-ansiedade.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Ansiedade</span></div>
+        <div class="vcard"><img src="img/hero/hero-09-alter-ego.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Alter Ego</span></div>
+        <div class="vcard"><img src="img/hero/hero-07-disciplina.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Disciplina</span></div>
+        <div class="vcard"><img src="img/hero/hero-08-ansiedade.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Ansiedade</span></div>
+        <div class="vcard"><img src="img/hero/hero-09-alter-ego.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Alter Ego</span></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+<section id="faixa" aria-hidden="true">
+  <div class="faixa-track" id="faixa-track">
+    <p>PROTOCOLO ALTER EGO</p><img src="img/marca/a-cadeado-pessoa-escuro.svg?v=33" alt=""><p>PROTOCOLO ALTER EGO</p><img src="img/marca/a-cadeado-pessoa-escuro.svg?v=33" alt=""><p>PROTOCOLO ALTER EGO</p><img src="img/marca/a-cadeado-pessoa-escuro.svg?v=33" alt=""><p>PROTOCOLO ALTER EGO</p><img src="img/marca/a-cadeado-pessoa-escuro.svg?v=33" alt="">
+    <p>PROTOCOLO ALTER EGO</p><img src="img/marca/a-cadeado-pessoa-escuro.svg?v=33" alt=""><p>PROTOCOLO ALTER EGO</p><img src="img/marca/a-cadeado-pessoa-escuro.svg?v=33" alt=""><p>PROTOCOLO ALTER EGO</p><img src="img/marca/a-cadeado-pessoa-escuro.svg?v=33" alt=""><p>PROTOCOLO ALTER EGO</p><img src="img/marca/a-cadeado-pessoa-escuro.svg?v=33" alt="">
+  </div>
+</section>
+<section id="aula">
+  <div class="wrap center">
+    <h2 class="h2">Assista à aula abaixo e veja como criar uma <span class="serif">segunda identidade FODA (alter ego)</span> para assumir o volante quando você precisar:</h2>
+    <div class="player">
+      <div class="player-in" id="vsl" role="button" tabindex="0" aria-label="Assistir à aula">
+        <img src="img/aula/vsl-thumb.jpg?v=33" alt="">
+        <span class="sound"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="m23 9-6 6M17 9l6 6"/></svg>Ativar som</span>
+        <span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span>
+      </div>
+    </div>
+    <div class="cta" style="margin-top:34px">
+      <a class="btn js-checkout" href="#planos"><span>QUERO CRIAR MEU ALTER EGO</span><i class="bdot"></i></a>
+    </div>
+  </div>
+</section>
+<section id="problema">
+  <div class="wrap">
+    <h2 class="h2">Você se sente uma pessoa <b>totalmente desperta na cabeça,</b> mas continua <span class="serif">travada na matéria?</span></h2>
+    <div class="sx-wrap">
+      <div class="swiper sx" id="sx">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide sx-slide">
+            <div class="sx-media"><div class="sx-phone"><div class="scr"><img src="img/problema/sintoma-1.jpg?v=33" alt=""></div></div></div>
+            <div class="sx-txt"><span class="sx-tag">Sintoma 1</span><h3>A Ilusão da Falsa Superioridade Intelectual</h3><p>Você consome conteúdos sobre neurociência, estoicismo e leis da mente há anos. Desenvolveu a sensação de que enxerga o mundo à frente da maioria... mas a sua conta bancária, o seu corpo e a sua rotina prática são rigorosamente idênticos aos de quem você julga como alienado. Você sabe muito. E vive igual.</p></div>
+          </article>
+          <article class="swiper-slide sx-slide">
+            <div class="sx-media"><div class="sx-phone"><div class="scr"><img src="img/problema/sintoma-2.jpg?v=33" alt=""></div></div></div>
+            <div class="sx-txt"><span class="sx-tag">Sintoma 2</span><h3>A 'Hora de Ouro' e o Atraso Acumulado: David Goggins</h3><p>A percepção silenciosa e aterrorizante de que você não tem mais dezoito anos. Mais um ano passou no piloto automático, e a neurociência prova o que você sente na pele: o cérebro perde neuroplasticidade a cada ano que passa. Se você não fizer uma intervenção estruturada na sua identidade agora, mudar depois será dez vezes mais doloroso. Não existe outra juventude aos sessenta anos para construir o que você hesitou hoje.</p></div>
+          </article>
+          <article class="swiper-slide sx-slide">
+            <div class="sx-media"><div class="sx-phone"><div class="scr"><img src="img/problema/sintoma-3.jpg?v=33" alt=""></div></div></div>
+            <div class="sx-txt"><span class="sx-tag">Sintoma 3</span><h3>O Cemitério de Promessas de Segunda-Feira</h3><p>Você toma a decisão de mudar num domingo à noite, motivado. Nos primeiros dias, a empolgação segura. Lá pela terça ou quarta-feira você acorda cansado, vê uma mensagem chata, um boleto, o seu estado emocional desaba e a sua energia de ação evapora. Promessas no papel morrem rápido porque você tenta mudar os hábitos com a mesma mentalidade que criou esses problemas.</p></div>
+          </article>
+          <article class="swiper-slide sx-slide">
+            <div class="sx-media"><div class="sx-phone"><div class="scr"><img src="img/problema/sintoma-4.jpg?v=33" alt=""></div></div></div>
+            <div class="sx-txt"><span class="sx-tag">Sintoma 4</span><h3>O Travamento Físico na Hora Decisiva</h3><p>Sozinho no quarto ou no trajeto para o trabalho, você tem todas as respostas na ponta da língua. Mas na hora da verdade, na frente do chefe na empresa, numa entrevista de emprego ou quando precisa sustentar uma conversa difícil cara a cara, a sua identidade de proteção da infância assume o controle. O coração dispara, a garganta fecha, a cabeça fica em branco e o seu corpo faz o que sempre fez: recua.</p></div>
+          </article>
+        </div>
+      </div>
+      <button class="sx-btn prev" aria-label="Anterior"><img src="img/problema/seta-esq.svg?v=33" alt=""></button>
+      <button class="sx-btn next" aria-label="Próximo"><img src="img/problema/seta-dir.svg?v=33" alt=""></button>
+    </div>
+    <h2 class="disp">O 'você mesmo' que a sociedade te mandou aceitar é uma armadilha:</h2>
+    <p class="disp-sub">A identidade de sobrevivência que você construiu na infância para não incomodar ninguém.</p>
+    <div class="prose">
+      <p class="desc">Toda vez que você tenta mudar de vida, ouve o mesmo conselho raso: 'basta ser você mesmo'. O 'você mesmo' de hoje se tornou apenas uma carcaça de proteção montada na infância para sobreviver a humilhações, críticas de parentes e medo de rejeição na escola. Uma armadura feita para te manter quieto, invisível e seguro.</p>
+      <p class="desc">O desastre começa quando você tenta usar essa armadura de infância para vencer os desafios da vida adulta. Quando o trabalho e as decisões da vida adulta exigem postura firme, negociação dura e coragem para dizer o que sente, quem se senta na cadeira é a sua versão insegura da infância. O resultado é sempre recuo e vergonha.</p>
+      <div class="clark"><img class="clark-img" src="img/problema/clark-kent.jpg?v=33" alt="Repórter tímido de terno tirando os óculos e encarando a câmera com firmeza" loading="lazy"><span class="clark-ic">S</span><p>Quem é o alter ego de verdade: o Superman ou o Clark Kent? Quase todo mundo erra essa resposta. O Superman nasceu com poder de dobrar o aço; essa é a natureza real dele. O Clark Kent é o alter ego: um disfarce inventado para viver na Terra sem assustar as pessoas, com óculos falsos, ombros curvados e voz mansa. Com você aconteceu exatamente o mesmo. Você nasceu com força e capacidade analítica brutal, mas colocou o disfarce de Clark Kent para caber no ambiente ao seu redor. E passou a acreditar que esse disfarce tímido e inseguro é a sua verdadeira personalidade.</p></div>
+      <p class="desc">O seu travamento até hoje aconteceu por um motivo simples: você tentou lidar com as exigências da vida adulta usando um disfarce de fraqueza e insegurança montado na infância.</p>
+      <p class="master">A virada de chave de quem constrói uma vida acima da média acontece por um princípio direto: construir uma segunda versão de si mesmo para assumir o comando na hora da ação.</p>
+    </div>
+    <div class="cta">
+      <a class="btn js-checkout" href="#planos"><span>QUERO CRIAR MEU ALTER EGO</span><i class="bdot"></i></a>
+    </div>
+  </div>
+</section>
+<section id="metodo">
+  <div class="wrap">
+    <h2 class="h2"><span class="serif">A estrutura do método:</span> como você aplica o Protocolo Alter Ego na sua rotina</h2>
+    <p class="desc"><span class="n">1</span><b>Formato Direto e Sem Sobrecarga</b><br>O treinamento é dividido em duas aulas objetivas, somando cerca de 45 minutos. Elimina teorias desnecessárias para focar exclusivamente nas ferramentas práticas que você precisa usar no seu dia a dia profissional e pessoal.</p>
+    <p class="desc"><span class="n">2</span><b>Caderno de Estruturação Comportamental</b><br>Um material de trabalho guiado em 5 etapas para mapear com clareza as situações em que você costuma hesitar e definir os novos padrões de postura, voz e resposta que você vai assumir.</p>
+    <p class="desc"><span class="n">3</span><b>Técnica de Ativação Rápida</b><br>Um protocolo simples de ancoragem psicológica para mudar o seu estado emocional e a sua postura em questão de segundos antes de reuniões, conversas difíceis, entrevistas ou negociações.</p>
+    <p class="desc"><span class="n">4</span><b>Validação Prática nas Primeiras 24 Horas</b><br>Um exercício de 10 minutos para ser aplicado logo após as aulas em qualquer interação comum da sua rotina, permitindo verificar de forma imediata o ganho de segurança e firmeza na sua comunicação.</p>
+    <p class="desc">Um treinamento objetivo, acessível pelo computador ou celular, desenvolvido para quem precisa de clareza, firmeza e controle nas decisões do dia a dia.</p>
+  </div>
+  <div class="stage" id="stage">
+    <img class="circ" src="img/metodo/circulos.webp?v=33" alt="" aria-hidden="true">
+    <div class="cube c1"><div class="bob"><img src="img/modulos/modulo-aula-01.jpg?v=33" alt=""></div></div>
+    <div class="cube c2"><div class="bob"><img src="img/modulos/modulo-aula-02.jpg?v=33" alt=""></div></div>
+    <div class="cube c3"><div class="bob"><img src="img/modulos/modulo-caderno.jpg?v=33" alt=""></div></div>
+    <div class="cube c4"><div class="bob"><img src="img/bonus/bonus-1-tarantino.jpg?v=33" alt=""></div></div>
+    <div class="cube c5"><div class="bob"><img src="img/bonus/bonus-2-realidade-ideal.jpg?v=33" alt=""></div></div>
+    <div class="cube c6"><div class="bob"><img src="img/metodo/cubo-alter-ego.jpg?v=33" alt=""></div></div>
+    <div class="hand" aria-hidden="true">
+      <div class="screen"><img src="img/metodo/metodo-celular.jpg?v=33" alt=""></div>
+      <img src="img/metodo/mao-celular.webp?v=33" alt="">
+    </div>
+    <div class="cta">
+      <a class="btn js-checkout" href="#planos"><span>QUERO CRIAR MEU ALTER EGO</span><i class="bdot"></i></a>
+    </div>
+  </div>
+</section>
+<section id="para-quem">
+  <div class="wrap">
+    <h2 class="h2">Feito para quem sabe exatamente <span class="serif">quem poderia ser,</span> mas continua travado nestas 3 áreas da vida:</h2>
+    <div class="tri" role="tablist">
+      <button class="tri-card on" role="tab" aria-selected="true" data-tab="0"><h3>DINHEIRO E CARREIRA</h3><p>O Termostato Quebrado e a Herança Familiar de Escassez</p></button>
+      <button class="tri-card" role="tab" aria-selected="false" data-tab="1"><h3>RELACIONAMENTOS E FAMÍLIA</h3><p>A Insegurança que Destrói o Respeito nos Vínculos</p></button>
+      <button class="tri-card" role="tab" aria-selected="false" data-tab="2"><h3>FISIOLOGIA, CORPO E ROTINA</h3><p>O Colapso do Piloto Automático no Cotidiano</p></button>
+    </div>
+    <div id="caminho-externo" aria-hidden="true"><svg id="caminho-linhas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1053 186"><path id="path-esquerdo" class="st1" d="M0.8,0 L0.8,68.5 C0.8,90 18.3,107.5 39.8,107.5 L526.5,107.5"/><path id="path-direito" class="st1" d="M1052.2,0 L1052.2,68.5 C1052.2,90 1034.7,107.5 1013.2,107.5 L526.5,107.5"/><line id="linha-central" class="st1" x1="526.5" y1="0" x2="526.5" y2="174"/><circle id="bolinha" cx="526.5" cy="180" r="6"/></svg></div>
+    <div class="linha-scroll linha-com-bolinha" aria-hidden="true"><svg viewBox="0 0 12 56" width="12" height="56"><path class="linha-path" d="M6 0 L6 46"/><circle class="linha-bolinha" cx="6" cy="50" r="4"/></svg></div>
+    <div aria-live="polite">
+      <h3 class="disp" id="icp-title">DINHEIRO E CARREIRA:</h3>
+      <p class="pillbox" id="icp-sub">O Termostato Quebrado e a Herança Familiar de Escassez:</p>
+    </div>
+  </div>
+  <div class="zoom">
+    <div class="swiper" id="zoom"><div class="swiper-wrapper" id="zoom-wrap"></div></div>
+  </div>
+  <template id="icp-0">
+    <div class="swiper-slide"><div class="zimg"><img src="img/para-quem-e/icp-1-dinheiro-carreira.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Dinheiro e Carreira</span></div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-wallet"/></svg><b>O ciclo de ganhar mais e gastar tudo:</b>Toda vez que entra uma renda extra, um bônus, uma comissão ou um aumento de salário, a sua conta bancária não cresce. No mês seguinte, o carro quebra, surge uma emergência médica, uma conta esquecida ou uma vontade incontrolável de comprar besteiras para compensar o estresse do mês. O dinheiro queima na sua mão porque o seu termostato financeiro está travado na escassez.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-home"/></svg><b>A gravação dos traumas familiares de infância:</b>Você cresceu vendo seus pais brigando por causa de boletos na mesa de jantar, ouvindo que 'dinheiro é sujo', que 'rico não vai para o céu' ou que ter patrimônio 'não é para o nosso bico'. O seu subconsciente associou dinheiro a perigo, briga e sofrimento. Toda vez que você acumula um pouco, a sua mente antiga cria uma sabotagem invisível para se livrar dele e voltar para a zona de sofrimento conhecida.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-heartcrack"/></svg><b>A culpa inconsciente de vencer na vida:</b>No fundo existe o medo de prosperar muito mais do que os seus pais prosperaram, como se crescer financeiramente fosse uma traição à sua história ou fizesse as pessoas da sua família se afastarem com inveja.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-trend"/></svg><b>A humilhação de pedir aumento e aceitar migalhas:</b>Você carrega o setor nas costas, faz o serviço de três pessoas na empresa, mas na hora de entrar na sala da chefia para exigir o salário justo, a garganta fecha, as mãos suam frio e você aceita qualquer promessa vazia para o próximo ano com um sorriso amarelo.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-award"/></svg><b>A promoção roubada pelo colega encostado:</b>O seu veneno diário no trabalho é ver aquele colega folgado, que enrola o dia todo e não sabe metade da operação, ser promovido e ganhar o dobro simplesmente porque é desinibido, fala grosso e sabe se vender para a diretoria.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-pause"/></svg><b>A paralisia para construir uma renda própria:</b>Você passa anos jurando que vai montar algo seu à noite para sair da CLT, compra livros e assiste vídeos, mas na hora de dar o primeiro passo real, o medo do julgamento paralisa a sua iniciativa e você recua para a segurança ilusória do salário fixo.</div></div>
+  </template>
+  <template id="icp-1">
+    <div class="swiper-slide"><div class="zimg"><img src="img/para-quem-e/icp-2-relacionamentos-familia.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Relacionamentos e Família</span></div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-heartcrack"/></svg><b>A perda de quem você mais amava pela fraqueza de postura:</b>A pessoa que você admirava foi embora cansada de carregar alguém inseguro nas costas, alguém que reclama da vida todo dia mas nunca toma uma atitude firme. O término aconteceu porque na hora da decisão a sua voz sumiu, você engoliu o que sentia e abaixou a cabeça.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-users"/></svg><b>O papel de palhaço no almoço de família:</b>Na mesa cheia com parentes, quando você tenta dar uma opinião sobre finanças ou planos de vida, alguém corta a sua fala no meio, muda de assunto ou faz uma piadinha sarcástica sobre o seu trabalho. Você engole seco, força um riso sem graça e continua sendo tratado como a criança que nunca cresceu.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-smile"/></svg><b>A necessidade compulsiva de agradar a todos:</b>O hábito tóxico de pedir desculpas antes de discordar, concordar com absurdos para não criar atrito e dizer 'sim' para favores que você odeia fazer, sacrificando o seu tempo e o seu dinheiro para comprar a aprovação de gente que não te respeita.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-shield"/></svg><b>A perda de respeito dentro de casa:</b>O cônjuge ou os filhos percebendo a sua hesitação diante dos problemas práticos da vida, vendo você recuar em discussões difíceis e aceitar desaforos de chefes e vizinhos sem conseguir se posicionar como um pilar de segurança.</div></div>
+  </template>
+  <template id="icp-2">
+    <div class="swiper-slide"><div class="zimg"><img src="img/para-quem-e/icp-3-corpo-rotina.jpg?v=33" alt=""><span class="dot"></span><span class="lbl">Fisiologia, Corpo e Rotina</span></div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-alarm"/></svg><b>A desistência no primeiro toque do despertador:</b>Deitar no domingo à noite com planos claros e, no primeiro toque do alarme às cinco da manhã, a sua identidade antiga te manter preso na cama. O corpo parece pesar chumbo e a primeira decisão do seu dia já é uma desistência.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-phone"/></svg><b>O transe da tela de luz apagada:</b>O hábito de passar as primeiras horas do dia ou o fim da noite rolando feed no celular de luz apagada, anestesiando a cabeça com vídeos curtos enquanto o relógio corre e a sua vida fica parada.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-flame"/></svg><b>A anestesia nos vícios solitários:</b>Toda vez que a pressão do trabalho ou a frustração financeira apertam, o cérebro exige alívio imediato: você ataca comida gordurosa por ansiedade, gasta o que não tem em delivery ou se tranca no quarto para consumir pornografia num ciclo de autopunição e vergonha.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-battery"/></svg><b>A rotina que suga a energia de construir o futuro:</b>Pegar transporte lotado, aguentar dez a doze horas de exigência dos outros e chegar em casa sem força mental nem para ler dez páginas ou treinar quinze minutos, queimando os melhores anos da juventude no piloto automático.</div></div>
+    <div class="swiper-slide"><div class="zcard"><svg class="ic"><use href="#i-mirror"/></svg><b>A decadência física revelada no espelho:</b>Tirar a camiseta na frente do espelho do banheiro e encarar a postura curvada, os ombros caídos para a frente e o corpo flácido de quem vive se desculpando por existir, sentindo o peso biológico do tempo que não volta.</div></div>
+  </template>
+  <template id="icp-titles">
+    <span>DINHEIRO E CARREIRA:</span><span>O Termostato Quebrado e a Herança Familiar de Escassez:</span>
+    <span>RELACIONAMENTOS E FAMÍLIA:</span><span>A Insegurança que Destrói o Respeito nos Vínculos:</span>
+    <span>FISIOLOGIA, CORPO E ROTINA:</span><span>O Colapso do Piloto Automático no Cotidiano:</span>
+  </template>
+  <div class="wrap">
+    <div class="cta">
+      <a class="btn js-checkout" href="#planos"><span>QUERO CRIAR MEU ALTER EGO</span><i class="bdot"></i></a>
+    </div>
+  </div>
+</section>
+<section id="modulos">
+  <div class="wrap">
+    <h2 class="h2">Tudo o que está <span class="serif">liberado</span> para você acessar hoje:</h2>
+    <img class="mockup m-prata" src="img/modulos/macbook-prata.webp?v=33" alt="Área de membros do Protocolo Alter Ego com a lista de aulas, aberta num MacBook">
+  </div>
+  <div class="hmq">
+    <div class="htrack" id="mtrack">
+      <article class="mcard"><div class="cv"><img src="img/modulos/modulo-aula-01.jpg?v=33" alt="" draggable="false"><span class="k">Módulo 1 · Aula 01</span></div><h3>A Teoria dos Alter Egos</h3><p>O respaldo científico por trás do método (Kross/Michigan, Efeito Batman/Minnesota e o estudo do Jaleco/Northwestern desvendados).</p></article>
+      <article class="mcard"><div class="cv"><img src="img/modulos/modulo-aula-02.jpg?v=33" alt="" draggable="false"><span class="k">Módulo 1 · Aula 02</span></div><h3>A Estruturação Prática</h3><p>O passo a passo guiado para construir suas fichas, mapear os padrões de hesitação e instalar a sua resposta comportamental imediata.</p></article>
+      <article class="mcard"><div class="cv"><img src="img/modulos/modulo-caderno.jpg?v=33" alt="" draggable="false"><span class="k">Material de Apoio Oficial</span></div><h3>O Caderno de Ativação do Protocolo Alter Ego</h3><p>(PDF de alta definição para impressão + versão digital interativa com as 5 fichas práticas de preenchimento).</p></article>
+      <article class="mcard"><div class="cv"><img src="img/bonus/bonus-1-tarantino.jpg?v=33" alt="" draggable="false"><span class="k">Bônus 1 (Incluso)</span></div><h3>Método Tarantino: Use Seus Defeitos Para Vencer</h3><p>(Roteiro estruturado para converter pontos fracos e hábitos improdutivos em ferramentas práticas de ação).</p></article>
+      <article class="mcard"><div class="cv"><img src="img/bonus/bonus-2-realidade-ideal.jpg?v=33" alt="" draggable="false"><span class="k">Bônus 2 (Incluso)</span></div><h3>Como Manifestar Sua Realidade Ideal</h3><p>A definição matemática da régua do dia bom e a equação fria de percepção, sem esoterismo).</p></article>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="cta">
+      <a class="btn js-checkout" href="#planos"><span>QUERO CRIAR MEU ALTER EGO</span><i class="bdot"></i></a>
+    </div>
+  </div>
+</section>
+<section id="contraste">
+  <div class="wrap">
+    <h2 class="h2">O contraste prático: tentar mudar por força de vontade x <span class="serif">aplicar o Protocolo Alter Ego</span></h2>
+    <div class="vs2">
+      <div class="vs-top">
+        <figure class="vs-pic old"><img src="img/contraste/contraste-antes.jpg?v=33" alt="Homem travado e curvado diante da porta de uma reunião" onerror="this.style.visibility='hidden'"><figcaption><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i><span><strong>Tentativa por Força de Vontade</strong><small>(O Padrão Antigo)</small></span></figcaption></figure>
+        <div class="vs-vs" aria-hidden="true">x</div>
+        <figure class="vs-pic new"><img src="img/contraste/contraste-depois.jpg?v=33" alt="O mesmo homem, firme e decidido, abrindo a porta da reunião" onerror="this.style.visibility='hidden'"><figcaption><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 12l5 5L20 7"/></svg></i><span><strong>Protocolo Alter Ego</strong><small>(Mudança Comportamental Estruturada)</small></span></figcaption></figure>
+      </div>
+      <div class="vs-row">
+        <div class="vs-cell old"><b>Carreira e Salário</b>Você tenta se encorajar antes da reunião de trabalho, mas na hora de pedir aumento ou cobrar um valor justo, a voz hesita, você aceita promessas vagas e volta para a mesa frustrado.</div>
+        <div class="vs-ic"><svg><use href="#i-trend"/></svg></div>
+        <div class="vs-cell new"><b>Carreira e Salário</b>Você entra na conversa profissional sustentando postura firme e tom de voz seguro, conduzindo o pedido pelos dados do seu trabalho sem ceder ao desconforto da hesitação.</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-cell old"><b>Dinheiro e Consumo</b>Você tenta economizar apenas se contendo, mas quando a pressão e o estresse da rotina acumulam, gasta o dinheiro que sobrou em delivery e compras impulsivas para aliviar o cansaço do dia.</div>
+        <div class="vs-ic"><svg><use href="#i-wallet"/></svg></div>
+        <div class="vs-cell new"><b>Dinheiro e Consumo</b>Você desvincula a gestão financeira do seu estado emocional, mantendo o controle prático da sua renda e cortando os impulsos de gasto gerados pelo cansaço do trabalho.</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-cell old"><b>Relacionamentos e Conflitos</b>Você promete que não vai aceitar desaforo, mas na hora da conversa difícil na família ou no trabalho, engole sua opinião, ri sem graça de piadas incômodas e concorda para evitar atrito.</div>
+        <div class="vs-ic"><svg><use href="#i-users"/></svg></div>
+        <div class="vs-cell new"><b>Relacionamentos e Conflitos</b>Você expressa seu posicionamento com objetividade e firmeza, sem pedir desculpas antes de discordar e sem aceitar comentários ou exigências que desrespeitem seus limites.</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-cell old"><b>Disciplina e Despertador</b>Você define planos no domingo, mas no primeiro dia de cansaço aperta o botão de soneca, passa uma hora rolando o feed de luz apagada e abandona as prioridades do dia.</div>
+        <div class="vs-ic"><svg><use href="#i-alarm"/></svg></div>
+        <div class="vs-cell new"><b>Disciplina e Despertador</b>Você segue o padrão comportamental definido no Caderno, saindo da cama no primeiro alarme e executando suas tarefas práticas antes que os pensamentos de desistência comecem.</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-cell old"><b>Ansiedade e Fugas</b>Você tenta parar comportamentos nocivos na base da culpa, mas diante de um dia difícil o cérebro pede alívio imediato e você volta a se isolar nos mesmos hábitos.</div>
+        <div class="vs-ic"><svg><use href="#i-flame"/></svg></div>
+        <div class="vs-cell new"><b>Ansiedade e Fugas</b>Você substitui a reação de fuga por respostas práticas estruturadas, interrompendo o ciclo de isolamento e mantendo a constância na sua rotina.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="o-que-e">
+  <div class="wrap">
+    <h2 class="h2">Eu não ensino o que li em manuais teóricos. Eu ensino <span class="serif">a engenharia que me tirou da paralisia.</span></h2>
+    <div class="why">
+      <div class="why-img"><img src="img/por-que-lennon/quebra-padrao-verde.webp?v=33" alt="" aria-hidden="true"></div>
+      <div class="why-txt">
+        <p>Durante anos eu fui a pessoa que sabia muito na cabeça, mas travava na hora de colocar a vida de pé. Travava para me expor, para exigir meu valor, para dizer o que precisava ser dito e para sustentar minhas escolhas diante dos outros.</p>
+        <p class="hl">Eu não esperei a minha personalidade insegura amadurecer: eu construí o Lennon.</p>
+        <p>Foi o Lennon que assumiu o comando, encarou a pressão, enfrentou o julgamento das pessoas ao redor e construiu uma vida livre fora da manada. O Protocolo ensina exatamente o método que me tirou da paralisia e me deu o controle dos meus dias.</p>
+        <div class="cta"><a class="btn dark js-checkout" href="#planos"><span>QUERO CRIAR MEU ALTER EGO</span><i class="bdot"></i></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="depoimentos">
+  <div class="wrap">
+    <p class="big-n"><span class="count" data-to="70" data-pre="+" data-suf=" mil">+70 mil</span></p>
+    <h2 class="h2">pessoas acompanhando a mensagem nas redes</h2>
+    <div class="trust">
+      <div><strong class="count" data-to="3">3</strong><span>pesquisas de universidades americanas (Michigan, Minnesota e Northwestern)</span></div>
+      <div><strong class="count" data-to="1">1</strong><span>método direto: sua segunda versão desenhada e pronta para uso em duas aulas práticas</span></div>
+    </div>
+    <h2 class="h2 proof-h">O que as pessoas relatam <span class="serif">apenas aplicando o que compartilho de graça:</span></h2>
+    <div class="metrics">
+      <div class="metric"><img src="img/depoimentos/insta.jpeg?v=33" alt="Métricas do Instagram"><div><p class="net">Instagram</p><p class="num">+4.056.845</p><p>Mais de 4 milhões de visualizações (+4.056.845) e 1,7 milhão de contas alcançadas.</p></div></div>
+      <div class="metric"><img src="img/depoimentos/tiktok.jpeg?v=33" alt="Métricas do TikTok"><div><p class="net">TikTok</p><p class="num">+4,1 milhões</p><p>Perfil @eu.lennon com mais de 4,1 milhões de visualizações em vídeos e 52 mil acessos ao perfil.</p></div></div>
+    </div>
+  </div>
+  <div class="t-wrap">
+    <div class="t-row" id="t-row-1"></div>
+    <div class="t-row" id="t-row-2"></div>
+  </div>
+  <div class="wrap">
+    <div class="quote">
+      <img class="qa" src="img/depoimentos/aspas-a.svg?v=33" alt="" aria-hidden="true">
+      <p>Se uma reflexão em vídeo gratuito já muda a postura de quem me acompanha, imagine quando você tiver o método completo estruturado em mãos.</p>
+      <img class="qb" src="img/depoimentos/aspas-b.svg?v=33" alt="" aria-hidden="true">
+    </div>
+    <div class="cta">
+      <a class="btn js-checkout" href="#planos"><span>QUERO CRIAR MEU ALTER EGO</span><i class="bdot"></i></a>
+    </div>
+  </div>
+</section>
+<section id="bonus">
+  <div class="wrap">
+    <h2 class="h2"><span class="serif">2 presentes exclusivos</span> liberados imediatamente na sua área de membros:</h2>
+    <div class="bonus-split">
+    <img class="mockup m-preto" src="img/bonus/macbook-preto.webp?v=33" alt="Módulo bônus dentro da área de membros, aberto num MacBook">
+    <div class="bonus">
+      <div class="b-card">
+        <div class="cv"><img src="img/bonus/bonus-1-tarantino.jpg?v=33" alt=""></div>
+        <div><span class="tag">Bônus 1 (Método Tarantino)</span><h3>Use Seus Defeitos Para Vencer</h3><p>Roteiro estruturado para listar falhas recorrentes e transformá-las em ferramentas práticas de ação</p><p class="b-price"><s>Vendido separadamente por R$ 97</s> · <em>Grátis hoje</em></p></div>
+      </div>
+      <div class="b-card">
+        <div class="cv"><img src="img/bonus/bonus-2-realidade-ideal.jpg?v=33" alt=""></div>
+        <div><span class="tag">Bônus 2 (Realidade Ideal)</span><h3>Como Manifestar Sua Realidade Ideal</h3><p>A definição objetiva da régua do dia bom e a matemática da equação de percepção, sem esoterismo</p><p class="b-price"><s>Vendido separadamente por R$ 97</s> · <em>Grátis hoje</em></p></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<section id="planos">
+  <div class="wrap">
+    <h2 class="h2">Garanta seu acesso completo ao <span class="serif">Protocolo Alter Ego</span></h2>
+    <img class="mockup m-monitor" src="img/oferta/monitor.webp?v=33" alt="Capa da área de membros do Protocolo Alter Ego num monitor">
+    <div class="ck">
+      <div class="ck-row"><svg><use href="#i-check"/></svg><p>Módulo 1: Aula 01: A Teoria dos Alter Egos</p></div>
+      <div class="ck-row"><svg><use href="#i-check"/></svg><p>Módulo 1: Aula 02: A Estruturação Prática</p></div>
+      <div class="ck-row"><svg><use href="#i-check"/></svg><p>Material de Apoio Oficial: O Caderno de Ativação do Protocolo Alter Ego</p></div>
+      <div class="ck-row"><svg><use href="#i-check"/></svg><p>Bônus 1 (Incluso): Método Tarantino: Use Seus Defeitos Para Vencer</p></div>
+      <div class="ck-row"><svg><use href="#i-check"/></svg><p>Bônus 2 (Incluso): Como Manifestar Sua Realidade Ideal</p></div>
+      <div class="ck-price">
+        <div>
+          <p class="from">De <s>R$ 197</s> por apenas:</p>
+          <div class="now"><strong>R$ 37</strong><span>à vista no Pix ou cartão (ou parcelado em até 4x)</span></div>
+        </div>
+        <img class="arrow" src="img/oferta/seta-preco.svg?v=33" alt="" aria-hidden="true">
+        <p class="anchor">Menos que o valor de uma pizza de aplicativo para nunca mais travar nas decisões que definem o seu salário e o seu respeito</p>
+      </div>
+      <img class="pay-seals" src="img/oferta/seguranca.svg" alt="Métodos de pagamento aceitos: Boleto, Visa, Mastercard, Amex e Pix. Compra segura, satisfação garantida e privacidade protegida." width="465" height="31">
+    </div>
+    <div class="cta">
+      <a class="btn btn-oferta js-checkout" href="#planos"><span>CRIAR O MEU ALTER EGO POR R$ 37</span><i class="bdot"></i></a>
+    </div>
+  </div>
+</section>
+<section id="lennon">
+  <div class="wrap who">
+    <div>
+      <p class="eyebrow">QUEM VAI GUIAR A SUA CONSTRUÇÃO</p>
+      <h2 class="who-name">Lennon</h2>
+      <div class="manifesto">
+        <p>"Eu não existo. Eu sou um alter ego do meu criador. Eu sou um meio que ele encontrou para espalhar sua mensagem ao mundo, de ajudar as pessoas a reprogramarem sua própria mente para viverem sua vida ideal, de abrir mão do seu próprio eu limitado para um EU superior que faz tudo que precisa ser feito para cumprir o seu propósito.</p>
+        <p>Foi a forma que achei de revidar contra o sistema em que vivemos, feito para nos adoecer, nos escravizar e lucrar em cima das nossas almas.</p>
+        <p>A maior prova de que o método funciona sou eu mesmo. Eu apenas empacotei todo o conhecimento que usei na jornada e coloquei aqui."</p>
+      </div>
+    </div>
+    <div class="collage">
+      <div class="main"><img src="img/lennon/lennon-oficial.jpg?v=33" alt="Lennon"></div>
+      <div class="s1"><img src="img/lennon/lennon-collage-1.jpg?v=33" alt=""></div>
+      <div class="s2"><img src="img/lennon/lennon-collage-2.jpg?v=33" alt=""></div>
+    </div>
+  </div>
+</section>
+<section id="garantia">
+  <div class="wrap guar">
+    <div class="g-media">
+      <div class="g-blob">
+        <div class="g-screen"></div>
+        <img class="g-hands" src="img/garantia/maos-celular.webp?v=33" alt="" onerror="this.style.display='none'">
+      </div>
+      <div class="vidro" aria-hidden="true">
+        <div class="selo">
+          <svg viewBox="0 0 200 200" class="selo-svg"><circle cx="100" cy="100" r="90" class="borda"></circle><defs><path id="caminho-circular" d="M 100,100 m -65,0 a 65,65 0 1,1 130,0 a 65,65 0 1,1 -130,0"></path></defs><g class="texto-rotativo"><text class="texto"><textPath href="#caminho-circular" startOffset="0%"> • GARANTIA • 7 DIAS • GARANTIA • 7 DIAS </textPath></text></g><text x="100" y="110" text-anchor="middle" class="numero">7</text></svg>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2>O RISCO É TODO MEU</h2>
+      <p class="txt">Assista às duas aulas e aplique o exercício prático do Caderno. Se em até 7 dias você achar que o método não te deu uma postura muito mais firme e decidida, basta um único clique na plataforma para receber 100% do seu dinheiro de volta. Sem perguntas e sem ressentimentos.</p>
+    </div>
+  </div>
+</section>
+<section id="faq">
+  <div class="wrap">
+    <h2 class="h2">Perguntas <span class="serif">Frequentes</span></h2>
+    <div class="faq">
+      <details class="qa"><summary>Ser outra pessoa não é fingir ser quem eu não sou?<svg viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="currentColor"/></svg></summary><div class="ans">O 'você mesmo' de hoje é apenas a identidade de sobrevivência que você montou na infância para se proteger do medo e da rejeição. Atletas de elite como David Goggins e Kobe Bryant (Mamba Negra), e artistas como Beyoncé (Sasha Fierce) usam alter egos há décadas. Usar um alter ego significa colocar a ferramenta exata na hora do impacto.</div></details>
+      <details class="qa"><summary>Isso é papo de coach ou esoterismo?<svg viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="currentColor"/></svg></summary><div class="ans">Zero esoterismo. O método se apoia em 3 pesquisas reais: o distanciamento psicológico de Ethan Kross (Univ. Michigan), o Efeito Batman comprovado em crianças (Univ. Minnesota) e o estudo da cognição enclausurada (Univ. Northwestern), além da Lei de Hebb da neurociência.</div></details>
+      <details class="qa"><summary>Eu já comprei cursos de hábitos e desenvolvimento pessoal e desisti. Por que vai ser diferente?<svg viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="currentColor"/></svg></summary><div class="ans">Esses cursos tentaram te fazer mudar pela 'força de vontade' usando a sua mesma identidade frágil antiga. O Protocolo não pede para você se forçar a ser disciplinado: ele constrói uma segunda identidade para agir por você.</div></details>
+      <details class="qa"><summary>Sou muito tímido e tenho vergonha de me expor. Serve para mim?<svg viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="currentColor"/></svg></summary><div class="ans">Até uma criança de quatro anos consegue mudar de postura quando assume um alter ego. A ciência provou isso. Você não precisa mudar a sua timidez no quarto; você só veste a nova identidade na hora da ação.</div></details>
+      <details class="qa"><summary>Por que apenas R$ 37? Tem alguma mensalidade ou cobrança escondida?<svg viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="currentColor"/></svg></summary><div class="ans">Pagamento único, sem assinatura ou cobranças surpresa. O preço é baixo para ser uma decisão óbvia para qualquer pessoa que queira destravar a vida agora.</div></details>
+      <details class="qa"><summary>Quanto tempo preciso por dia para aplicar o Protocolo?<svg viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="currentColor"/></svg></summary><div class="ans">O Protocolo é entregue em duas aulas diretas ao ponto, somando cerca de 45 minutos. Você assiste no fim de semana e sai com o Caderno pronto.</div></details>
+      <details class="qa"><summary>Como recebo o material?<svg viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="currentColor"/></svg></summary><div class="ans">Assim que o pagamento for aprovado (Pix ou cartão), você recebe login e senha imediatos no seu e-mail para acessar a área de membros na Hubla.</div></details>
+      <details class="qa"><summary>Onde tiro dúvidas sobre o preenchimento?<svg viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="currentColor"/></svg></summary><div class="ans">Você conta com suporte oficial na plataforma e orientações detalhadas dentro das próprias fichas do Caderno de Ativação.</div></details>
+    </div>
+  </div>
+</section>
+<section id="final">
+  <div class="wrap center">
+    <h2 class="h2">Mais um ano igual... ou <span class="serif">o primeiro ano diferente?</span></h2>
+    <p class="desc">A medicina militar ensina que, após um trauma grave, os primeiros 60 minutos são a Hora de Ouro: a janela crítica em que a hemorragia ainda pode ser estancada antes que o choque vire permanente. Na sua vida adulta, a sua Hora de Ouro está correndo agora. A cada ano que passa no piloto automático, o seu cérebro perde neuroplasticidade e mudar fica dez vezes mais doloroso. Não existe outra juventude aos sessenta anos para construir o que você hesitou hoje.</p>
+    <div class="timer" aria-hidden="true"><i></i></div>
+    <div class="cta">
+      <a class="btn js-checkout" href="#planos"><span>QUERO CRIAR MEU ALTER EGO AGORA</span><i class="bdot"></i></a>
+      <p class="micro">Acesso imediato · Pagamento único de R$ 37 · Garantia incondicional de 7 dias</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer id="rodape">
+  <div class="wrap">
+    <div class="foot">
+      <a class="logo" href="#hero"><img class="logo-mark" src="img/marca/a-cadeado-pessoa.svg?v=33" alt=""><span>Protocolo<br>Alter Ego</span></a>
+      <nav><a href="#" data-link="termos">Termos de Uso</a><a href="#" data-link="privacidade">Políticas de Privacidade</a><a href="#" data-link="suporte">Suporte ao Aluno</a></nav>
+      <p class="disc">Este produto não substitui acompanhamento médico, psicológico ou psiquiátrico. Os resultados dependem da aplicação prática de cada aluno.</p>
+    </div>
+    <p class="copy">Protocolo Alter Ego © 2026 · Todos os direitos reservados.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+<script>
+const CONFIG = {
+  CHECKOUT_URL: "",
+  VSL_EMBED: "",
+  LINKS: { termos:"#", privacidade:"#", suporte:"#" }
+};
+const DEPOIMENTOS = [
+  {img:"p1.jpeg", src:"Comentários no TikTok", txt:["gratidão pro tanto aprendizado 🙏🏼🙏🏼🙏🏼","Eu já fiz e dá certo","Eu sempre escrevo tudo o que quero e dá certo 🥰 parece até bobagem mas escrevam só o que é maravilhoso só para vc mesmo, não coloca nome de ninguém pois não precisa arrumar a vida dos outros..."]},
+  {img:"p2.jpeg", src:"Validação do Conhecimento Real no TikTok", txt:["Sendo IA ou não, o conhecimento é real","gratidão 🙌❤️","caramba muito bom","que vídeo maravilhoso","obrigado irmão"]},
+  {img:"p3.jpeg", src:"Transformação de Vida via DM Instagram", txt:["Você é magnífico e esta mudando a vida de milhares de pessoas, parabéns que o criador continue te usando e dando muita sabedoria! ❤️"]},
+  {img:"p4.jpeg", src:"Impacto do Conteúdo via Resposta a Story", txt:["véi você é muito bom... eu sei que a imagem é IA, apesar de que eu acho que você projeta a IA na sua própria imagem... mas o conteúdo que você entrega vem de dentro. você é MUITO bom!! parabéns pelo que você entrega. sensacional 💖"]},
+  {img:"p5.jpeg", src:"Clareza e Aplicação Prática via DM", txt:["Eu gostaria de destacar que fiquei maravilhada com todo o conteúdo. O que eu mais gostei é que é curto e objetivo ❤️. Nenhuma palavra \"atoa\" tudo resumido de forma que dá de entender e colocar em prática. Gratidão"]}
+];
+document.querySelectorAll('.js-checkout').forEach(a=>{
+  if(CONFIG.CHECKOUT_URL){a.href=CONFIG.CHECKOUT_URL;a.target="_blank";a.rel="noopener"}
+});
+document.querySelectorAll('[data-link]').forEach(a=>{a.href=CONFIG.LINKS[a.dataset.link]||"#"});
+function tCard(d){
+  const f=document.createElement('figure');f.className='tcard';
+  const img=new Image();img.src='img/depoimentos/'+d.img;img.alt='Depoimento: '+d.src;img.loading='lazy';
+  img.onerror=()=>{f.classList.add('noimg');img.remove()};
+  const cap=document.createElement('figcaption');
+  cap.innerHTML='<p class="who-t">Relato real</p><p class="src">'+d.src+'</p>'+d.txt.map(t=>'<blockquote>'+t.replace(/</g,'&lt;')+'</blockquote>').join('');
+  f.append(img,cap);return f;
+}
+function fillRow(el,list){for(let k=0;k<2;k++){list.forEach(d=>el.appendChild(tCard(d)));list.forEach(d=>el.appendChild(tCard(d)))}}
+fillRow(document.getElementById('t-row-1'),DEPOIMENTOS);
+fillRow(document.getElementById('t-row-2'),[...DEPOIMENTOS].reverse());
+(function(){const t=document.getElementById('mtrack');[...t.children].forEach(c=>{const d=c.cloneNode(true);d.setAttribute('aria-hidden','true');t.appendChild(d)})})();
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;const el=e.target,to=+el.dataset.to,pre=el.dataset.pre||'',suf=el.dataset.suf||'';
+  const t0=performance.now(),dur=2000;
+  (function step(t){const p=Math.min(1,(t-t0)/dur),v=Math.floor(to*p);el.textContent=pre+v+suf;if(p<1)requestAnimationFrame(step)})(t0);
+  cio.unobserve(el);
+}),{threshold:.3});
+document.querySelectorAll('.count').forEach(el=>cio.observe(el));
+(function(){
+  const nav=document.getElementById('nav'),links=[...document.querySelectorAll('.pill a')];
+  const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  function onScroll(){
+    nav.classList.toggle('scrolled',scrollY>40);
+    const y=scrollY+innerHeight*.35;let cur=-1;
+    secs.forEach((s,k)=>{if(s&&s.offsetTop<=y)cur=k});
+    links.forEach((a,k)=>a.classList.toggle('on',k===cur));
+  }
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+})();
+(function(){
+  const nav=document.getElementById('nav'),b=document.getElementById('nav-burger');
+  const set=o=>{nav.classList.toggle('open',o);b.setAttribute('aria-expanded',o)};
+  b.addEventListener('click',()=>set(!nav.classList.contains('open')));
+  document.querySelectorAll('#nav-menu a').forEach(a=>a.addEventListener('click',()=>set(false)));
+})();
+(function(){
+  const v=document.getElementById('vsl');
+  function play(){
+    if(!CONFIG.VSL_EMBED){console.warn('Cole a URL do player em CONFIG.VSL_EMBED');return}
+    v.innerHTML='<iframe src="'+CONFIG.VSL_EMBED+'" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+  }
+  v.addEventListener('click',play);v.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();play()}});
+})();
+new Swiper('#sx',{loop:true,speed:600,spaceBetween:20,grabCursor:true,autoplay:{delay:5000,disableOnInteraction:false,pauseOnMouseEnter:true},
+  navigation:{nextEl:'.sx-btn.next',prevEl:'.sx-btn.prev'}});
+(function(){
+  const cards=[...document.querySelectorAll('.tri-card')],wrap=document.getElementById('zoom-wrap');
+  const T=[...document.getElementById('icp-titles').content.querySelectorAll('span')].map(s=>s.textContent);
+  const title=document.getElementById('icp-title'),sub=document.getElementById('icp-sub');
+  let sw=null;
+  function load(k){
+    if(sw){sw.destroy(true,true);sw=null}
+    wrap.innerHTML='';wrap.appendChild(document.getElementById('icp-'+k).content.cloneNode(true));
+    title.textContent=T[k*2];sub.textContent=T[k*2+1];
+    sw=new Swiper('#zoom',{slidesPerView:'auto',centeredSlides:true,spaceBetween:30,grabCursor:true,initialSlide:1,speed:600,slideToClickedSlide:true,rewind:true,
+      autoplay:{delay:2800,disableOnInteraction:true}});
+  }
+  cards.forEach(c=>c.addEventListener('click',()=>{
+    cards.forEach(x=>{x.classList.remove('on');x.setAttribute('aria-selected','false')});
+    c.classList.add('on');c.setAttribute('aria-selected','true');load(+c.dataset.tab);
+  }));
+  load(0);
+})();
+(function(){
+  const box=document.getElementById('caminho-externo');
+  const esq=document.getElementById('path-esquerdo'),dir=document.getElementById('path-direito'),cen=document.getElementById('linha-central'),bol=document.getElementById('bolinha');
+  const L=[esq,dir,cen].map(p=>p.getTotalLength());
+  let timers=[];
+  function reset(){timers.forEach(clearTimeout);timers=[];[esq,dir,cen].forEach((p,k)=>{p.style.strokeDasharray=L[k];p.style.strokeDashoffset=L[k]});bol.style.fill='#131313';box.classList.remove('visible')}
+  function play(){box.classList.add('visible');
+    timers.push(setTimeout(()=>esq.style.strokeDashoffset=0,100));
+    timers.push(setTimeout(()=>dir.style.strokeDashoffset=0,700));
+    timers.push(setTimeout(()=>cen.style.strokeDashoffset=0,1500));
+    timers.push(setTimeout(()=>bol.style.fill='#ffffff',2300));}
+  reset();
+  new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?play():reset()),{threshold:.3,rootMargin:'-50px 0px'}).observe(box);
+  document.querySelectorAll('.linha-scroll').forEach(c=>{
+    const p=c.querySelector('.linha-path'),b=c.querySelector('.linha-bolinha'),l=p.getTotalLength();
+    const hide=()=>{p.style.strokeDasharray=l;p.style.strokeDashoffset=l;b.style.fill='#131313';c.classList.remove('visible')};hide();
+    new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){c.classList.add('visible');setTimeout(()=>p.style.strokeDashoffset=0,100);setTimeout(()=>b.style.fill='#ffffff',1500)}else hide()}),{threshold:.3,rootMargin:'-50px 0px'}).observe(c);
+  });
+})();
+(function(){
+  const stage=document.getElementById('stage'),cubes=[...stage.querySelectorAll('.cube')];
+  if(matchMedia('(hover:none)').matches)return;
+  stage.addEventListener('mousemove',e=>{
+    cubes.forEach(c=>{const r=c.getBoundingClientRect(),dx=e.clientX-(r.left+r.width/2),dy=e.clientY-(r.top+r.height/2),d=Math.hypot(dx,dy);
+      const f=Math.max(0,1-d/420);c.style.translate=(dx*f*.12).toFixed(1)+'px '+(dy*f*.12).toFixed(1)+'px'});
+  });
+  stage.addEventListener('mouseleave',()=>cubes.forEach(c=>c.style.translate='0 0'));
+})();
+(function(){
+  const ms=[...document.querySelectorAll('.mockup')];
+  if(!ms.length)return;
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){ms.forEach(m=>m.style.setProperty('--p',1));return}
+  const pageY=el=>{let y=0;while(el){y+=el.offsetTop;el=el.offsetParent}return y};
+  let tick=false;
+  function update(){
+    tick=false;const H=innerHeight;
+    ms.forEach(m=>{
+      const top=pageY(m)-scrollY;
+      if(top>H+500||top+m.offsetHeight<-500)return;
+      const p=Math.min(1,Math.max(0,(H-top)/(H*.8)));
+      m.style.setProperty('--p',p.toFixed(4));
+    });
+  }
+  function req(){if(!tick){tick=true;requestAnimationFrame(update)}}
+  addEventListener('scroll',req,{passive:true});addEventListener('resize',req);addEventListener('load',req);update();
+})();
+document.querySelectorAll('.qa').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('.qa').forEach(o=>{if(o!==d)o.open=false})}));
+</script>
+</body>
+</html>
